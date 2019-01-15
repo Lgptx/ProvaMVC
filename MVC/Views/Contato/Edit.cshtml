@@ -1,0 +1,22 @@
+﻿@model ProvaProd.Models.Contatos
+@{
+    ViewBag.Title = "Editar";
+}
+
+<h2>Criar Contato</h2>
+@Html.BeginForm("Edit", "Contato"){
+<table>
+    <tr>
+        <td>@Html.Label(Model.Nome)</td>
+        <td>@Html.Editor(Model.Nome)</td>
+    </tr>
+    <tr>
+        <td>@Html.Label(Model.email)</td>
+        <td>@Html.Editor(Model.email)</td>
+    </tr>
+    <tr>
+        <td>@Html.Label(Model.Telefone)</td>
+        <td>@Html.Editor(Model.Telefone)</td>
+    </tr>
+</table>
+}

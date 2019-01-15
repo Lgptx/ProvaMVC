@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@if (!Request.IsAuthenticated)
+{
+    @Html.Action("Login", "Account")
+
+}
