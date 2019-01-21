@@ -8,9 +8,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using ProvaProd.Models;
+using Prova8.Models;
 
-namespace ProvaProd.Controllers
+namespace Prova8.Controllers
 {
     [Authorize]
     public class AccountController : Controller

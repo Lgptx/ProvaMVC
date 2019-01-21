@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(ProvaProd.Startup))]
-namespace ProvaProd
+[assembly: OwinStartupAttribute(typeof(Prova8.Startup))]
+namespace Prova8
 {
     public partial class Startup
     {

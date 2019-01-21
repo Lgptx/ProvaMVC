@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Prova8.Models.ContatoUsuario>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Email.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailContato)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelefoneContato)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmailContato)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelefoneContato)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.NomeContatoID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.NomeContatoID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.NomeContatoID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace ProvaProd.Models
+namespace Prova8.Models
 {
     public class ExternalLoginConfirmationViewModel
     {

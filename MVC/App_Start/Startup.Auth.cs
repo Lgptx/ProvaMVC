@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using ProvaProd.Models;
+using Prova8.Models;
 
-namespace ProvaProd
+namespace Prova8
 {
     public partial class Startup
     {

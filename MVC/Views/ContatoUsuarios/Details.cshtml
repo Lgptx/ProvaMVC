@@ -1,0 +1,42 @@
+﻿@model Prova8.Models.ContatoUsuario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ContatoUsuario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Email.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailContato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailContato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefoneContato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelefoneContato)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NomeContatoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
